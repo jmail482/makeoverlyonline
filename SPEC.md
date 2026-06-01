@@ -114,8 +114,8 @@ export PLAYWRIGHT_BROWSERS_PATH=/work/tools/ms-playwright
 - Home: hero only ✅
 - Photo left/content right ✅
 - Black text ✅
-- Hero title: `Nishikawa` — no dot ✅
-- No social icons in hero ✅
+- Hero title: `Nishikawa.` — with dot (matches LOCKED) ✅
+- Social icons in hero: LinkedIn, GitHub, Email (matches LOCKED) ✅
 - All nav = separate pages ✅
 - Section pages live: /about/ /featured-work/ /deep-case-study/ /experience/ /contact/ ✅
 - Section pages generated via `content/{page}.md` with `type: sectionpage` ✅
