@@ -175,7 +175,7 @@ params:
     items:
       - title: "TWAG: +104% Keyword Visibility Lift"
         content: "Six years, 33 cities, and the Cloudflare config change that delivered a SEMrush-verified 104% keyword visibility lift. Anchor advisor went from #6 to #2 on WPC Top-50."
-        image: ""
+        image: "/makeoverlyonline/images/projects/twag.jpg"
         featured:
           name: "Read Case Study"
           link: "/makeoverlyonline/case-studies/twag-104-percent-lift/"
@@ -187,7 +187,7 @@ params:
 
       - title: "Excalibur: 14-Module AI Marketing Engine"
         content: "A multi-LLM audit system delivering 22-tab interactive HTML reports. Independent verification catches what single-pass audits miss — including a fabricated 5★/500-review schema block."
-        image: ""
+        image: "/makeoverlyonline/images/projects/excalibur.jpg"
         featured:
           name: "Read Case Study"
           link: "/makeoverlyonline/case-studies/excalibur-engine-development/"
@@ -199,7 +199,7 @@ params:
 
       - title: "Tooth Corner: 2,000+ CDCP Keywords"
         content: "Dental DSO programmatic SEO: 2,000+ CDCP keywords mapped across 152 Canadian cities, 30+ Ontario locations. Full keyword-to-city matrix for location page generation."
-        image: ""
+        image: "/makeoverlyonline/images/projects/tooth-corner.jpg"
         featured:
           name: "Read Case Study"
           link: "/makeoverlyonline/case-studies/tooth-corner-cdcp/"
@@ -210,7 +210,7 @@ params:
 
       - title: "Distillery Events: $233K–$382K Revenue Recovery"
         content: "A Toronto venue group eaten by a neighborhood entity. Entity disambiguation, fabricated review schema discovery, Knowledge Graph remediation. Projected 12-month recovery: $233K–$382K."
-        image: ""
+        image: "/makeoverlyonline/images/projects/distillery.jpg"
         featured:
           name: "Read Case Study"
           link: "/makeoverlyonline/case-studies/distillery-events-v3-audit/"
@@ -222,7 +222,7 @@ params:
 
       - title: "Peak 15 Systems: 50 → 10,000 Monthly Visits"
         content: "Tour operator SaaS with zero commercial landing pages. 8 near-page-1 keywords addressable in 60–90 days. 12-month projection: 10,000 visits/month, 250 demo requests."
-        image: ""
+        image: "/makeoverlyonline/images/projects/peak15.jpg"
         featured:
           name: "Read Case Study"
           link: "/makeoverlyonline/case-studies/peak15-systems-seo-audit/"
