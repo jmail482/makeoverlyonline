@@ -109,10 +109,28 @@ export PLAYWRIGHT_BROWSERS_PATH=/work/tools/ms-playwright
 ---
 
 ## CURRENT STATE (as of 2026-06-01)
-- main: `7783fff`
-- gh-pages: `a4a7083`
+- main: `1392a3c`
+- gh-pages: deployed (same build)
 - Home: hero only ✅
 - Photo left/content right ✅
 - Black text ✅
 - All nav = separate pages ✅
 - Recent posts hidden ✅
+- Nav logo (broken img) removed ✅
+- Search bar removed ✅
+- Dark mode toggle removed ✅
+- Footer branding ("Made with Hugo Profile") removed ✅
+- Footer social icons removed ✅
+- Footer = clean copyright only ✅
+- Hero empty space fixed (min-height:auto) ✅
+- FontAwesome: JS (562KB) → CSS CDN ✅
+- style.css 404 fixed ✅
+
+## CHANGELOG
+### 1392a3c (2026-06-01)
+- `hugo.yaml`: `showBrandLogo: false`, `disableSearch: true`, `socialNetworks: {}`
+- `extensions.html`: `#theme-toggle{display:none}`, hero `min-height:auto`, button `margin-top:0`, footer styles
+- `layouts/partials/sections/footer/copyright.html`: clean copyright override
+- `layouts/partials/sections/footer/socialNetwork.html`: empty (no icons)
+- `layouts/index.html`: FA JS replaced with FA 6.4.2 CSS CDN
+- `static/style.css`: created (fixes 404)
