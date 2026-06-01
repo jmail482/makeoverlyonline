@@ -6,14 +6,20 @@
     <script>
         (function() {
             var base = '/makeoverlyonline/';
+            var map = {
+                'about': 'about/',
+                'experience': 'experience/',
+                'projects': 'featured-work/',
+                'featured-work': 'featured-work/',
+                'deep-case-study': 'deep-case-study/',
+                'contact': 'contact/'
+            };
             var path = window.location.pathname;
-            var sections = ['about','experience','projects','deep-case-study','achievements','contact','testimonials','hero'];
+            var hash = (window.location.hash || '').replace('#', '');
+            if (hash && map[hash]) { window.location.replace(base + map[hash]); return; }
             if (path.indexOf(base) === 0) {
-                var segment = path.substring(base.length).replace(/\/$/, '');
-                if (sections.indexOf(segment) !== -1) {
-                    window.location.replace(base + '#' + segment);
-                    return;
-                }
+                var seg = path.substring(base.length).replace(/\/$/, '');
+                if (map[seg]) { window.location.replace(base + map[seg]); return; }
             }
             window.location.replace(base);
         })();
