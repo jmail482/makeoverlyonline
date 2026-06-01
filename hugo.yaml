@@ -35,6 +35,15 @@ params:
   # PURE WHITE BACKGROUND
   customCSS: true
 
+  color:
+    textColor: "#000000"
+    secondaryTextColor: "#000000"
+    textLinkColor: "#000000"
+    backgroundColor: "#ffffff"
+    secondaryBackgroundColor: "#ffffff"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
+
   font:
     fontSize: 1rem
     fontWeight: 400
