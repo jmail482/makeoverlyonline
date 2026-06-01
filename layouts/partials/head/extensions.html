@@ -11,6 +11,13 @@ section { background-color: #ffffff !important; }
 .dark .deep-case-study { background: rgba(255,255,255,0.03) !important; }
 .dark .testimonial-card { background: rgba(255,255,255,0.03) !important; }
 
+/* Fix opacity on hero subtitle — theme sets 0.5/0.6 which makes text look gray */
+#hero h2 { opacity: 1 !important; }
+#hero .subtitle { opacity: 1 !important; }
+#hero .hero-content { opacity: 1 !important; }
+.stat-label { opacity: 1 !important; }
+.metric .metric-label { opacity: 1 !important; }
+
 /* ALL BLACK TEXT — override theme CSS variables at :root level */
 :root {
     --text-color: #000000 !important;
