@@ -53,7 +53,8 @@ params:
   navbar:
     align: ms-auto
     brandName: "Jonathan Nishikawa"
-    disableSearch: false
+    showBrandLogo: false
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -423,9 +424,7 @@ params:
       title: "Recent Case Studies"
       enable: true
       disableFeaturedImage: true
-    socialNetworks:
-      github: "https://github.com/jmail482"
-      linkedin: "https://www.linkedin.com/in/jonathan-nishikawa"
+    socialNetworks: {}
 
   listPages:
     disableFeaturedImage: true
