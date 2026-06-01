@@ -42,7 +42,7 @@ footer .card-footer a {
 
 footer .card-footer a:hover {
     color: var(--primary-color) !important;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 footer .card-footer a:focus {
