@@ -126,4 +126,10 @@ a.primary-font.card-title { color: #000000 !important; }
 .dark #about .content { color: #e0e0e0 !important; opacity: 1 !important; }
 .dark .light > * { color: #e0e0e0 !important; }
 </style>
-<style>html { scroll-behavior: smooth; }</style>
+<style>
+html { scroll-behavior: smooth; }
+/* Offset anchor scroll so sections land below the sticky navbar, not behind it */
+#about, #projects, #deep-case-study, #experience, #testimonials, #achievements, #contact, #hero {
+    scroll-margin-top: 80px;
+}
+</style>
