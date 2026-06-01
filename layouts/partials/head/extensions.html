@@ -126,37 +126,4 @@ a.primary-font.card-title { color: #000000 !important; }
 .dark #about .content { color: #e0e0e0 !important; opacity: 1 !important; }
 .dark .light > * { color: #e0e0e0 !important; }
 </style>
-<script>
-function scrollToSection(el) {
-    var section = el.getAttribute('data-section');
-    var target = document.getElementById(section);
-    if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, '', el.getAttribute('href'));
-        return false;
-    }
-    return true;
-}
-
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
-        var base = '/makeoverlyonline/';
-        var path = window.location.pathname;
-        if (path.indexOf(base) === 0) {
-            var section = path.substring(base.length).replace(/\/$/, '');
-            if (section && section !== '') {
-                var target = document.getElementById(section);
-                if (target) { setTimeout(function() { target.scrollIntoView({ behavior: 'smooth' }); }, 300); }
-            }
-        }
-        if (window.location.hash) {
-            var hash = window.location.hash.substring(1);
-            var target = document.getElementById(hash);
-            if (target) {
-                history.replaceState(null, '', base + hash);
-                setTimeout(function() { target.scrollIntoView({ behavior: 'smooth' }); }, 300);
-            }
-        }
-    });
-})();
-</script>
+<style>html { scroll-behavior: smooth; }</style>
