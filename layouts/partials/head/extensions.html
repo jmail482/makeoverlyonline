@@ -215,5 +215,11 @@ body:not(.dark) .card .card-title, body:not(.dark) .blog-card .card-title{color:
 /* Kill scroll-in / jump animations site-wide (keep deliberate hover effects) */
 html{scroll-behavior:auto !important;}
 .animate,.image.animate,.content.animate{opacity:1 !important;transform:none !important;animation:none !important;}
+
+/* Home page: hide recent posts footer */
+body.home #recent-posts,
+body.home #recent-posts + *,
+body.home footer .recent-posts,
+#recent-posts{display:none !important;}
 </style>
 
