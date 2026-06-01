@@ -77,35 +77,39 @@ body.light > * { color: #000000 !important; opacity: 1 !important; }
 .post-entry { opacity: 1 !important; }
 .post-entry * { opacity: 1 !important; }
 
-/* 5. BLUE ACCENTS — these need higher specificity than the catch-all */
-#hero h1 { color: #007bff !important; }
-.hero-stat .stat-number { color: #007bff !important; }
-.metric .metric-value { color: #007bff !important; }
-.testimonial-card .quote-mark { color: #007bff !important; opacity: 0.3 !important; }
+/* 5. ALL BLACK — no blue accents anywhere */
+#hero h1 { color: #000000 !important; }
+.hero-stat .stat-number { color: #000000 !important; }
+.metric .metric-value { color: #000000 !important; }
+.testimonial-card .quote-mark { color: #000000 !important; opacity: 1 !important; }
 
-/* Buttons */
-a.btn, a.btn-outline, .btn-outline { color: #007bff !important; border-color: #007bff !important; }
-a.btn:hover, a.btn-outline:hover, .btn-outline:hover { color: #ffffff !important; background-color: #007bff !important; }
-#hero a.btn { color: #007bff !important; }
-#hero a.btn:hover { color: #007bff !important; }
-#hero a.btn.social-icon { color: #007bff !important; }
+/* Buttons — black outline */
+a.btn, a.btn-outline, .btn-outline { color: #000000 !important; border-color: #000000 !important; }
+a.btn:hover, a.btn-outline:hover, .btn-outline:hover { color: #ffffff !important; background-color: #000000 !important; }
+#hero a.btn { color: #000000 !important; }
+#hero a.btn:hover { color: #ffffff !important; background-color: #000000 !important; }
+#hero a.btn.social-icon { color: #000000 !important; }
 
-/* Social icons */
-.social-icons a, .social-icons a i, .social-icons a svg { color: #007bff !important; }
+/* Social icons — black */
+.social-icons a, .social-icons a i, .social-icons a svg { color: #000000 !important; }
 
 /* Project/case study links */
-.project-link a, .btn.btn-outline-primary, .case-study-link { color: #007bff !important; }
-.deep-case-study a.case-study-link { color: #007bff !important; }
+.project-link a, .btn.btn-outline-primary, .case-study-link { color: #000000 !important; }
+.deep-case-study a.case-study-link { color: #000000 !important; }
 
 /* Nav brand */
-.navbar-brand, .navbar-brand span { color: #007bff !important; }
+.navbar-brand, .navbar-brand span { color: #000000 !important; }
 
-/* Read Full Case Study links */
-a[href*="case-stud"] { color: #007bff !important; }
+/* All links */
+a[href*="case-stud"] { color: #000000 !important; }
+a { color: #000000 !important; }
 
 /* Active nav items */
-.nav-link.active { color: #007bff !important; }
-#experience .nav-link.active { color: #007bff !important; }
+.nav-link.active { color: #000000 !important; }
+#experience .nav-link.active { color: #000000 !important; }
+
+/* Blog post titles */
+a.primary-font.card-title { color: #000000 !important; }
 
 /* 6. Dark mode support */
 .dark { 

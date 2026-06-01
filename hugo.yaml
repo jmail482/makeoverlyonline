@@ -41,7 +41,7 @@ params:
     textLinkColor: "#000000"
     backgroundColor: "#ffffff"
     secondaryBackgroundColor: "#ffffff"
-    primaryColor: "#007bff"
+    primaryColor: "#000000"
     secondaryColor: "#f8f9fa"
 
   font:
