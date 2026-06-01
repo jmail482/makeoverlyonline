@@ -5,12 +5,12 @@
 }
 
 #single .title > h1 {
-    opacity: 1;
+    opacity: 0.8;
     color: var(--text-color) !important;
 }
 
 #single .title small {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 #single .featured-image {
@@ -44,7 +44,7 @@
     bottom: 0.37em;
     background-color: var(--primary-color);
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    opacity: 1;
+    opacity: 0.5;
 }
 
 #single .page-content a:hover::after, #single .page-content a:focus::after, #single .page-content a:active::after {
@@ -54,7 +54,7 @@
 #single .page-content h1, #single .page-content h2, #single .page-content h3, #single .page-content h4, #single .page-content h5, #single .page-content h6 {
     color: var(--text-link-color) !important;
     margin-bottom: 0.7em;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single .page-content blockquote {
@@ -80,7 +80,7 @@
     max-width: 100%;
     display: block;
     overflow-x: auto;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 #single .page-content table > tr {
@@ -92,13 +92,13 @@
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border: 1px solid var(--secondary-color);
-    opacity: 1;
+    opacity: 0.9;
 }
 #single .page-content table > tbody > tr > td {
     padding: 0.5rem !important;
     border: 1px solid var(--secondary-color);
     background-color: var(--secondary-color) !important;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single .page-content table > thead > tr {
@@ -144,7 +144,7 @@
     margin-bottom: 1.2em;
     padding-left: 1.5em;
     list-style-position: inside;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single .page-content ol li li, #single .page-content ul li li {
@@ -196,7 +196,7 @@
 }
 
 #single aside.tags ul.tags-ul li:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 
@@ -217,14 +217,14 @@
     margin-bottom: 1em;
     padding-left: .5em;
     list-style: none;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single aside.toc .toc-content ol li a, #single aside.toc .toc-content ul li a {
     font-size: 16px;
     text-decoration: none;
     color: var(--text-link-color) !important;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single aside.toc .toc-content ol li a:hover, #single aside.toc .toc-content ul li a:hover {
@@ -250,12 +250,12 @@
 
 #single aside.social .social-content {
     margin-bottom: 1em;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single aside.social .social-content ul {
     margin-bottom: 1em;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #single aside.social .social-content ul li a {
@@ -272,7 +272,7 @@
 }
 
 #single aside.social .social-content ul li:hover a {
-    opacity: 1;
+    opacity: .8;
     color: var(--text-link-color) !important;
 }
 
