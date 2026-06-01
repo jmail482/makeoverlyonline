@@ -30,7 +30,7 @@ params:
   description: "Independent SEO consultant. 14 years in digital marketing. Building AI-driven marketing engines."
   favicon: "/favicon.ico"
   useBootstrapCDN: false
-  animate: true
+  animate: false
 
   # PURE WHITE BACKGROUND
   customCSS: true

@@ -212,4 +212,7 @@ body:not(.dark) .card .card-title, body:not(.dark) .blog-card .card-title{color:
   transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,0.2);
 }
 #hero .hero-photo-social a.btn.social-icon:hover i{color:#ffffff !important;}
+/* Kill scroll-in / jump animations site-wide (keep deliberate hover effects) */
+html{scroll-behavior:auto !important;}
+.animate,.image.animate,.content.animate{opacity:1 !important;transform:none !important;animation:none !important;}
 </style>
