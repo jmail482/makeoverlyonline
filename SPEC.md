@@ -109,22 +109,33 @@ export PLAYWRIGHT_BROWSERS_PATH=/work/tools/ms-playwright
 ---
 
 ## CURRENT STATE (as of 2026-06-01)
-- main: `b3858b6`
-- gh-pages: deployed (same build)
+- main: `e054a3a`
+- gh-pages: `f95a6bd` (deployed)
 - Home: hero only ✅
 - Photo left/content right ✅
 - Black text ✅
+- Hero title: `Nishikawa` — no dot ✅
+- No social icons in hero ✅
 - All nav = separate pages ✅
+- Section pages live: /about/ /featured-work/ /deep-case-study/ /experience/ /contact/ ✅
+- Section pages generated via `content/{page}.md` with `type: sectionpage` ✅
 - Recent posts hidden ✅
 - Nav logo (broken img) removed ✅
 - Search bar removed ✅
 - Dark mode toggle removed ✅
 - Footer branding ("Made with Hugo Profile") removed ✅
 - Footer social icons removed ✅
-- Footer = clean copyright only ✅
+- Footer logo image removed ✅
+- Footer = `© 2026 Jonathan Nishikawa. All Rights Reserved.` only ✅
 - Hero empty space fixed (min-height:auto) ✅
-- FontAwesome: JS (562KB) → CSS CDN ✅
+- FontAwesome: local JS (6.4.2) ✅
 - style.css 404 fixed ✅
+
+## STILL NEEDED (awaiting Jonathan's assets)
+- Real resume PDF → `static/files/jonathan-nishikawa-resume.pdf`
+- Project screenshots (5) → `static/images/projects/`
+- Verbatim client testimonials (3)
+- Formspree form ID for contact form
 
 ## CHANGELOG
 ### 1392a3c (2026-06-01)
