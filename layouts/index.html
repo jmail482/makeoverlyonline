@@ -1,0 +1,55 @@
+{{ define "head" }}
+<meta name="description" content={{ .Site.Params.description }}>
+<link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+
+<style>
+/* Stats bar in hero */
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin:1.5rem 0;padding:1rem 0;border-top:1px solid rgba(128,128,128,0.2);border-bottom:1px solid rgba(128,128,128,0.2)}
+.hero-stat{text-align:center}
+.hero-stat .stat-number{font-size:1.8rem;font-weight:700;line-height:1;color:var(--primary-color)}
+.hero-stat .stat-label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;opacity:0.7;margin-top:0.25rem}
+
+/* Deep case study */
+.deep-case-study{background:var(--secondary-bg,#f8f9fa);border-radius:12px;padding:2.5rem;margin-bottom:2rem;border-left:4px solid var(--primary-color,#007bff)}
+.deep-case-study h4{margin-bottom:1rem;font-size:1.4rem}
+.deep-case-study .case-meta{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem;font-size:0.85rem;opacity:0.8}
+.deep-case-study .case-meta span{display:flex;align-items:center;gap:0.3rem}
+.deep-case-study .case-metrics{display:flex;gap:2rem;flex-wrap:wrap;margin:1.5rem 0}
+.deep-case-study .metric{text-align:center;padding:1rem;background:rgba(255,255,255,0.8);border-radius:8px;min-width:120px}
+.dark .deep-case-study .metric{background:rgba(0,0,0,0.2)}
+.dark .deep-case-study{background:rgba(255,255,255,0.03)}
+.metric .metric-value{font-size:1.5rem;font-weight:700;color:var(--primary-color)}
+.metric .metric-label{font-size:0.75rem;text-transform:uppercase;opacity:0.7}
+
+/* Testimonials */
+.testimonial-card{padding:2rem;border-radius:12px;background:var(--secondary-bg,#f8f9fa);position:relative;height:100%}
+.dark .testimonial-card{background:rgba(255,255,255,0.03)}
+.testimonial-card .quote-mark{font-size:3rem;line-height:1;color:var(--primary-color);opacity:0.3;position:absolute;top:0.5rem;left:1rem}
+.testimonial-card blockquote{border:none;padding-left:0;margin:1rem 0;font-style:italic;font-size:1rem;line-height:1.6}
+.testimonial-card .attribution{font-weight:600;font-size:0.9rem}
+.testimonial-card .attribution span{font-weight:400;opacity:0.7}
+
+/* Hero buttons */
+.hero-buttons{display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center}
+.btn-outline{border:2px solid var(--primary-color,#007bff);background:transparent;color:var(--primary-color,#007bff);padding:0.5rem 1.25rem;border-radius:6px;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-flex;align-items:center;gap:0.4rem}
+.btn-outline:hover{background:var(--primary-color,#007bff);color:#fff}
+</style>
+{{ end }}
+
+{{ define "title" }}
+{{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+{{/* CONSENSUS ARCHITECTURE: Hero → About → Featured Work → Deep Case Study → Experience → Testimonials → Achievements → Contact */}}
+{{- partial "sections/hero/index.html" . -}}
+{{- partial "sections/about.html" . -}}
+{{- partial "sections/projects.html" . -}}
+{{- partial "sections/deep-case-study.html" . -}}
+{{- partial "sections/experience.html" . -}}
+{{- partial "sections/testimonials.html" . -}}
+{{- partial "sections/achievements.html" . -}}
+{{- partial "sections/contact.html" . -}}
+{{ end }}

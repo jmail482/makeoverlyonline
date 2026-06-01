@@ -124,6 +124,17 @@
                     </li>
                     {{ end }}
 
+                    {{ if .Site.Params.deepCaseStudy }}
+                    {{ if .Site.Params.deepCaseStudy.enable | default false }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}deep-case-study" data-section="deep-case-study" onclick="return scrollToSection(this)"
+                            aria-label="deep dive">
+                            Deep Dive
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.Home.RelPermalink }}achievements" data-section="achievements" onclick="return scrollToSection(this)"

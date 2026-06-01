@@ -1,0 +1,16 @@
+/* Pure white background */
+body {
+    background-color: #ffffff !important;
+}
+.dark body {
+    background-color: #1a1a2e !important;
+}
+section {
+    background-color: #ffffff !important;
+}
+.dark section {
+    background-color: #1a1a2e !important;
+}
+.container {
+    background-color: transparent !important;
+}
