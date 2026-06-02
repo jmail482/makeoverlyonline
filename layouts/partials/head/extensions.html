@@ -303,22 +303,30 @@ section h3.text-center, .title h2{
   .navbar-brand.brand-logo .brand-word{font-size:1.35rem !important;}
 }
 
-/* Social icons: a clean ROW under the photo (colored circular icons, no labels) */
-#hero .hero-social-row{display:flex;flex-direction:row;justify-content:center;gap:14px;margin-top:1.5rem;}
+/* Social icons: small, monochrome, minimal row under the photo (no colors) */
+#hero .hero-social-row{display:flex;flex-direction:row;justify-content:center;gap:12px;margin-top:1.4rem;}
 #hero .hero-social-row .social-ic{
   display:inline-flex;align-items:center;justify-content:center;
-  width:42px;height:42px;border-radius:50%;background:var(--brand) !important;flex:none;
-  text-decoration:none;transition:transform .18s ease, box-shadow .18s ease;
+  width:34px;height:34px;border-radius:50%;
+  background:transparent !important;border:1.5px solid #d4d4d4;flex:none;
+  text-decoration:none;transition:all .18s ease;
 }
-#hero .hero-social-row .social-ic i{color:#ffffff !important;font-size:1.05rem;opacity:1 !important;}
-#hero .hero-social-row .social-ic:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.20);}
+#hero .hero-social-row .social-ic i{color:#111111 !important;font-size:0.9rem;opacity:1 !important;}
+#hero .hero-social-row .social-ic:hover{background:#111111 !important;border-color:#111111;}
+#hero .hero-social-row .social-ic:hover i{color:#ffffff !important;}
 
-/* CTA buttons: stacked in a COLUMN underneath the social icons (left column) */
+/* CTA buttons: stacked column, both IDENTICAL (same professional style) */
 #hero .hero-buttons-left{
-  display:flex;flex-direction:column;align-items:stretch;gap:12px;
-  max-width:260px;margin:1.5rem auto 0;
+  display:flex;flex-direction:column;align-items:stretch;gap:11px;
+  max-width:240px;margin:1.4rem auto 0;
 }
 #hero .hero-buttons-left a.btn,
-#hero .hero-buttons-left a.btn-outline{width:100% !important;}
+#hero .hero-buttons-left a.btn-outline{
+  width:100% !important;background:#111111 !important;color:#ffffff !important;
+  border:1.5px solid #111111 !important;
+}
+#hero .hero-buttons-left a.btn-outline i{color:#ffffff !important;}
+#hero .hero-buttons-left a.btn:hover,
+#hero .hero-buttons-left a.btn-outline:hover{background:#000000 !important;border-color:#000000 !important;color:#ffffff !important;}
 </style>
 
