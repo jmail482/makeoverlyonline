@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="makeoverly">
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="#111111"/>
+  <polyline points="14,43 27,30 37,37 50,19"
+            fill="none" stroke="#ffffff" stroke-width="6"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="39,19 50,19 50,30"
+            fill="none" stroke="#19B36B" stroke-width="6"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
