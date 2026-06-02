@@ -11,15 +11,26 @@
                             alt="{{ .Site.Params.title }} profile image"
                         >
                         {{ if .Site.Params.hero.socialLinks }}
-                        <div class="hero-social-stack">
+                        <div class="hero-social-row">
                             {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
-                            <a href="{{ .url }}"{{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener"{{ end }} class="social-row" style="--brand: {{ .color | default "#111111" }}">
-                                <span class="social-ic"><i class="{{ .icon }}"></i></span>
-                                <span class="social-label">{{ .label | default "" }}</span>
+                            <a href="{{ .url }}"{{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener"{{ end }} class="social-ic" style="--brand: {{ .color | default "#111111" }}" aria-label="{{ .label | default "social" }}">
+                                <i class="{{ .icon }}"></i>
                             </a>
                             {{ end }}
                         </div>
                         {{ end }}
+
+                        {{/* CTA buttons stacked in a column under the social icons */}}
+                        <div class="hero-buttons hero-buttons-left">
+                            {{ if .Site.Params.hero.button.enable }}
+                            <a href="{{ .Site.Params.hero.button.url | relURL }}" class="btn"{{ if .Site.Params.hero.button.download }} download{{ end }}>{{ $hero.button.name | default .Site.Params.hero.button.name }}</a>
+                            {{ end }}
+                            {{ if .Site.Params.hero.resumeButton }}
+                            {{ if .Site.Params.hero.resumeButton.enable }}
+                            <a href="{{ .Site.Params.hero.resumeButton.url | relURL }}" class="btn-outline" download><i class="fas fa-file-download"></i> {{ .Site.Params.hero.resumeButton.name | default "Download Resume" }}</a>
+                            {{ end }}
+                            {{ end }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,17 +58,6 @@
                     {{ end }}
                 </div>
                 {{ end }}
-
-                <div class="hero-buttons">
-                    {{ if .Site.Params.hero.button.enable }}
-                    <a href="{{ .Site.Params.hero.button.url | relURL }}" class="btn"{{ if .Site.Params.hero.button.download }} download{{ end }}>{{ $hero.button.name | default .Site.Params.hero.button.name }}</a>
-                    {{ end }}
-                    {{ if .Site.Params.hero.resumeButton }}
-                    {{ if .Site.Params.hero.resumeButton.enable }}
-                    <a href="{{ .Site.Params.hero.resumeButton.url | relURL }}" class="btn-outline" download><i class="fas fa-file-download"></i> {{ .Site.Params.hero.resumeButton.name | default "Download Resume" }}</a>
-                    {{ end }}
-                    {{ end }}
-                </div>
             </div>
         </div>
     </div>
