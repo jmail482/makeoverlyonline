@@ -1,0 +1,46 @@
+{{ define "title" }}
+{{ .Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<section id="projects" class="py-5 section-page case-studies-grid">
+    <div class="container">
+        <h2 class="text-center mb-4">{{ .Title }}</h2>
+        <div class="row justify-content-center px-3 px-md-5">
+            {{ range .Pages.ByDate.Reverse }}
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="{{ .Title }}">
+                    <a href="{{ .RelPermalink }}" class="text-reset text-decoration-none">
+                    <div class="card-head project-card-head">
+                        {{ if .Params.cover.image }}
+                        <img class="card-img-top project-bg-img" src="{{ .Params.cover.image | relURL }}" alt="{{ .Title }}">
+                        {{ end }}
+                        {{ if .Params.stat }}
+                        <div class="project-stat-overlay">
+                            <div class="project-stat-number">{{ .Params.stat }}</div>
+                            {{ if .Params.statLabel }}<div class="project-stat-label">{{ .Params.statLabel }}</div>{{ end }}
+                            {{ if .Params.statSubtitle }}<div class="project-stat-subtitle">{{ .Params.statSubtitle }}</div>{{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    </a>
+                    <div class="card-body bg-transparent p-3">
+                        <h5 class="card-title bg-transparent mt-1">
+                            <a href="{{ .RelPermalink }}" class="text-reset text-decoration-none">{{ .Title }}</a>
+                        </h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            {{ .Summary | plainify | truncate 180 }}
+                        </div>
+                    </div>
+                    <div class="card-footer py-3">
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="{{ .RelPermalink }}">Read</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,18 +1,25 @@
 ---
 title: "Sologlass.ca: A 4.9-star ICBC-certified auto glass shop invisible to every search — and 24 steps to fix it"
-date: 2026-05-29T10:00:00-05:00
+date: 2025-08-13T10:00:00-05:00
 draft: false
 tags: ["case study", "technical SEO", "local SEO", "ICBC", "Excalibur", "auto glass"]
 categories: ["case studies"]
 description: "Solo Glass had a 4.9-star Google rating, 149+ reviews, two locations, and ICBC certification. From their South Surrey address, they ranked for zero keywords — organic, Map Pack, and AI Overviews all blank. The Excalibur V2 engine diagnosed why."
 summary: "A two-location BC auto glass shop with exemplary real-world credentials produced an overall digital health score of 38/100. The audit found the /about/ page ranking for 11 service keywords, footer links pointing to a development server on every page, HTTP and HTTPS indexed as separate pages, and zero digital presence from the Surrey location. A 24-step roadmap sequenced the fix."
+stat: "$450K–$1.5M"
+statLabel: "Revenue Leakage"
+statSubtitle: "Sologlass · 4.9★ · ICBC Certified"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/sologlass-excalibur-v2-audit.jpg"
   alt: ""
   caption: ""
 ShowToc: true
 TocOpen: false
 ---
+
+## Forensic Audit Case Study: The Invisible 5-Star Authority
+
+**Strategic Focus:** Technical Infrastructure & Revenue Recovery
 
 ## The business
 
@@ -55,6 +62,16 @@ All 11 tracked keywords showed green difficulty ratings (10–23 range) [SEO Pow
 ## What this demonstrates
 
 Auto glass in BC is an insurance-paid category — ICBC covers windshield repair and replacement directly [ICBC Glass Repair Program Guide][^7]. The conversion bottleneck is not price or persuasion. It is visibility. The 24 items were a dependency chain, not a list.
+
+## Quantified revenue leakage
+
+The 38/100 Digital Health Score is not a number — it is a dollar figure. Mapping current visibility against market demand in the Surrey / White Rock / Cloverdale corridor (combined population ~500,000) yields an estimated **$450K–$1.5M in annual revenue leakage**: traffic and ICBC-paid claims that legacy local competitors and franchise chains (NOVUS, Speedy Glass) are capturing because Solo Glass has zero presence in queries originating south of the Fraser. Once the 3-month structural rebuild executes, even partial market re-entry compounds against an audience that is mandated by ICBC to use a certified shop.
+
+## What I'd do differently
+
+In hindsight, the audit should have led with the dev-server footer link, not with HTTP/HTTPS. Both are P0 issues, but the dev-server footer was actively bleeding crawl equity to a domain Solo Glass doesn't control — a structural problem that would have undermined every other fix until resolved. Sequencing the diagnosis from "loudest signal" (the keyword/page mismatch) to "most-load-bearing failure" (the footer) inverted the dependency chain a second time. The 24-step roadmap got it right; the audit narrative didn't.
+
+I'd also defer the speed/Core Web Vitals work behind the architectural fixes. A 5-second load time matters, but only after the right pages are ranking for the right queries. Speed work on a /about/ page that shouldn't be ranking for service queries is wasted effort.
 
 ## Sources
 

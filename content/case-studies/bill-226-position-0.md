@@ -1,11 +1,18 @@
 ---
 title: "Run With Rob: How a charity PR campaign won 14 months at Position 0 on Bill 226"
-date: 2026-05-18T16:00:00-05:00
+date: 2024-05-22T16:00:00-05:00
 draft: false
 tags: ["case study", "PR", "featured snippet", "policy", "cause-driven"]
 categories: ["case studies"]
 description: "The SEO outcome of Rob Tetrault's Canadian CMB Foundation campaign supporting Bill 226. An EIN Presswire wire achieved Featured Snippet (Position 0) on the issue's primary query for ~14 months before domain migration."
 summary: "An EIN Presswire wire achieved Featured Snippet (Position 0) on the issue's primary query for ~14 months before domain migration. The PR-as-SEO integration that most consultants under-leverage."
+stat: "14 mo"
+statLabel: "At Position 0"
+statSubtitle: "Run With Rob · Bill 226 PR Campaign"
+cover:
+  image: "/makeoverlyonline/images/case-studies/bill-226-position-0.jpg"
+  alt: ""
+  caption: ""
 ShowToc: true
 TocOpen: false
 ---

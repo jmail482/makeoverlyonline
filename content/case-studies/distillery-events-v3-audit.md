@@ -6,8 +6,11 @@ tags: ["case study", "entity SEO", "schema", "hospitality", "Toronto"]
 categories: ["case studies"]
 description: "The brand SERP is being cannibalized by thedistillerydistrict.com. The audit found Google miscategorized Distillery Events as a sub-attribute of the Distillery District neighborhood — and a fabricated 5★/500-review schema block on the homepage that's an active Google manual-action risk."
 summary: "The brand SERP is being cannibalized by thedistillerydistrict.com. The audit found Google miscategorized Distillery Events as a sub-attribute of the Distillery District neighborhood — and a fabricated 5★/500-review schema block that's a manual-action risk. Full v3.1 marketing engine audit with 22 tabs and projected $233K–$382K 12-month revenue recovery."
+stat: "$233K–$382K"
+statLabel: "Revenue Recovery"
+statSubtitle: "Distillery Events · 12-Month Projection"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/distillery-events-v3-audit.jpg"
   alt: ""
   caption: ""
 ShowToc: true

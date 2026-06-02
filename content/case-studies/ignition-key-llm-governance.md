@@ -1,13 +1,16 @@
 ---
 title: "The Ignition Key Paradox: Eliminating LLM 'Skimming' via Tokenized Runtime Governance"
-date: 2026-05-31T21:15:00-05:00
+date: 2026-03-14T21:15:00-05:00
 draft: false
 tags: ["infrastructure", "LLM governance", "database engineering", "case study", "Python"]
 categories: ["case studies"]
 description: "A deep dive into solving the 'Acknowledgment Loop' in multi-agent AI systems through mechanical write-gates and a 94% reduction in boot-token overhead."
 summary: "This engagement involved auditing a high-complexity Memory Gateway where documentation-only governance was failing. By re-engineering the boot sequence into a tokenized 'Ignition Key' and building a transaction-safe Memcore runtime, I eliminated the 50K-token 'boot-squeeze' and implemented forensic-grade write provenance."
+stat: "0%"
+statLabel: "LLM Skimming"
+statSubtitle: "Tokenized Runtime Governance"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/ignition-key-llm-governance.jpg"
   alt: "Schema diagram of the Skills DB and Memcore Runtime architecture"
   caption: "The transition from behavioral law to mechanical gate enforcement."
 ShowToc: true

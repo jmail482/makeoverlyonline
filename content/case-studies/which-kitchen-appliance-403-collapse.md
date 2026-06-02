@@ -1,13 +1,16 @@
 ---
 title: "whichkitchenappliance.com: How a URL restructure generated 403s on every ranking page and collapsed a site overnight"
-date: 2026-05-28T10:00:00-05:00
+date: 2023-02-14T10:00:00-05:00
 draft: false
 tags: ["case study", "technical SEO", "403", "ranking collapse", "crawl audit"]
 categories: ["case studies"]
 description: "A Screaming Frog crawl identified 403 Forbidden errors on every high-ranking /cookers/ content page and 523 blocked images. The collapse wasn't an algorithm update — it was a URL restructure that broke indexed paths."
 summary: "A well-performing UK kitchen appliance affiliate blog lost 91% of its top-3 keywords in two weeks. Screaming Frog identified the cause: a content restructure that returned 403 Forbidden on the structural ranking assets and blocked 523 image files simultaneously. The client chose not to implement the rollback."
+stat: "Overnight"
+statLabel: "403 Site Collapse"
+statSubtitle: "URL Restructure Postmortem"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/which-kitchen-appliance-403-collapse.jpg"
   alt: ""
   caption: ""
 ShowToc: true

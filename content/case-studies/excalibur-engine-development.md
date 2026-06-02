@@ -1,13 +1,16 @@
 ---
 title: "Excalibur: Building a 14-module marketing audit engine that runs on multiple LLMs and delivers 22-tab interactive HTML"
-date: 2026-05-29T12:00:00-05:00
+date: 2025-04-19T12:00:00-05:00
 draft: false
 tags: ["case study", "AI infrastructure", "marketing engine", "audit system", "Excalibur"]
 categories: ["case studies"]
 description: "Excalibur is a multi-LLM marketing audit system that evolved from a single-analyst diagnostic into a 14-module business growth intelligence framework delivering interactive HTML audit reports. Live deployments: Sologlass.ca (Excalibur V2, April 2026) and Distillery Events (Excalibur V3.1, May 2026)."
 summary: "The Excalibur Marketing Engine was built iteratively to produce comprehensive, evidence-tagged marketing audits at a scale and speed no single analyst could achieve manually. By V3.1, the system produced a 22-tab interactive HTML deliverable covering 14 modules, with independent LLM verification built into the methodology."
+stat: "14"
+statLabel: "Module AI Engine"
+statSubtitle: "Multi-LLM · 22-Tab Interactive Reports"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/excalibur-engine-development.jpg"
   alt: ""
   caption: ""
 ShowToc: true

@@ -1,11 +1,18 @@
 ---
 title: "Mapping 2,000+ CDCP keywords across 152 Canadian cities for dental DSO autosuggest capture"
-date: 2026-05-14T11:00:00-05:00
+date: 2026-01-22T11:00:00-05:00
 draft: false
 tags: ["case study", "healthcare", "DSO", "CDCP", "programmatic SEO", "Ontario"]
 categories: ["case studies"]
 description: "Active Tooth Corner engagement: a programmatic approach to Canadian dental DSO discoverability across the long tail of CDCP-driven patient acquisition. 30+ Ontario locations, multi-property hub architecture, mass-audit framework deployable across 130-client cohorts."
 summary: "Active Tooth Corner engagement: a programmatic approach to Canadian dental DSO discoverability across the long tail of CDCP-driven patient acquisition. 30+ Ontario locations. Multi-property hub architecture + mass-audit framework."
+stat: "2,000+"
+statLabel: "CDCP Keywords Mapped"
+statSubtitle: "Tooth Corner · 152 Canadian Cities"
+cover:
+  image: "/makeoverlyonline/images/case-studies/tooth-corner-cdcp.jpg"
+  alt: ""
+  caption: ""
 ShowToc: true
 TocOpen: false
 ---

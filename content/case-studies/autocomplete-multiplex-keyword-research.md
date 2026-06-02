@@ -1,13 +1,16 @@
 ---
 title: "autocomplete_multiplex.py: Routing keyword research across three API backends with automatic failover and credit tracking"
-date: 2026-05-29T13:00:00-05:00
+date: 2025-11-08T10:30:00-05:00
 draft: false
 tags: ["case study", "Python", "keyword research", "automation", "API", "CDCP"]
 categories: ["case studies"]
 description: "A Python keyword research multiplexer that routes different AI agents to different API backends — Serper, ScrapFly, and direct Google Autocomplete — with automatic failover, per-backend credit tracking, and usage logging. Built to support large-scale CDCP dental keyword research."
 summary: "autocomplete_multiplex.py was built to solve a practical problem: running keyword autocomplete queries at scale across a multi-agent AI infrastructure where different agents have different API access, credit pools are finite and backend-specific, and no single backend is reliable enough to run the full workload alone. The solution is a routing layer that matches agent to backend by policy, tracks spend per backend, logs usage, and fails over automatically."
+stat: "3"
+statLabel: "API Backends · Failover"
+statSubtitle: "Routing Keyword Research · Credit Tracking"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/autocomplete-multiplex-keyword-research.jpg"
   alt: ""
   caption: ""
 ShowToc: true

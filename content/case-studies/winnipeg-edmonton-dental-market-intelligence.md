@@ -1,13 +1,16 @@
 ---
 title: "Winnipeg & Edmonton Dental Market Intelligence: The revenue gap most practice owners have never seen"
-date: 2026-05-29T11:00:00-05:00
+date: 2026-02-08T11:00:00-05:00
 draft: false
 tags: ["case study", "market research", "local SEO", "dental", "lead generation", "CDCP"]
 categories: ["case studies"]
 description: "A full-spectrum market intelligence report covering two Canadian dental markets: Winnipeg (160+ dentists, 5,000 monthly dentures searches at competition index 15) and Edmonton (2.5B industry, sedation dentistry near-zero competition). Built to support a targeted dental client acquisition strategy."
 summary: "The report mapped procedure margins, conversion funnel mechanics, Local Pack ranking signals, and hyperlocal keyword architecture across two markets. The central finding: no Winnipeg or Edmonton dental practice was executing all five Local Pack ranking signals simultaneously — not a single one."
+stat: "300+"
+statLabel: "Practices Triaged"
+statSubtitle: "Winnipeg & Edmonton Dental Intelligence"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/winnipeg-edmonton-dental-market-intelligence.jpg"
   alt: ""
   caption: ""
 ShowToc: true

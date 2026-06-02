@@ -84,7 +84,7 @@ params:
     enable: true
     intro: ""
     title: "Nishikawa"
-    subtitle: "I make businesses visible where it counts."
+    subtitle: "I make businesses visible where it counts"
     content: "Independent SEO consultant with 14 years in digital marketing. I build AI-driven marketing engines and execute technical SEO strategies that produce measurable, documented results — not promises."
     image: "/makeoverlyonline/images/profile.jpg"
     bottomImage:
@@ -92,20 +92,22 @@ params:
     stats:
       - value: "14"
         label: "Years in SEO"
+      - value: "$600M → $1.2B"
+        label: "AUM Growth (TWAG)"
       - value: "138"
         label: "KPI Reports Shipped"
       - value: "+104%"
         label: "Keyword Lift (TWAG)"
-      - value: "4"
-        label: "Active Clients"
+      - value: "100+"
+        label: "First-Page Cluster Rankings (TWAG)"
     button:
-      enable: true
+      enable: false
       name: "View Case Studies"
       url: "/makeoverlyonline/case-studies"
       download: false
       newPage: false
     resumeButton:
-      enable: true
+      enable: false
       name: "Download Resume"
       url: "/makeoverlyonline/files/jonathan-nishikawa-resume.pdf"
     socialLinks:
@@ -181,6 +183,9 @@ params:
     title: "Featured Work"
     items:
       - title: "TWAG: +104% Keyword Visibility Lift"
+        stat: "+104%"
+        statLabel: "Keyword Visibility Lift"
+        statSubtitle: "TWAG · 6-Year Retainer · 33 Cities"
         content: "Six years, 33 cities, and the Cloudflare config change that delivered a SEMrush-verified 104% keyword visibility lift. Anchor advisor went from #6 to #2 on WPC Top-50."
         image: "/makeoverlyonline/images/projects/twag.jpg"
         featured:
@@ -193,6 +198,9 @@ params:
           - "6-Year Retainer"
 
       - title: "Excalibur: 14-Module AI Marketing Engine"
+        stat: "14"
+        statLabel: "Module AI Marketing Engine"
+        statSubtitle: "Multi-LLM · 22-Tab Interactive Reports"
         content: "A multi-LLM audit system delivering 22-tab interactive HTML reports. Independent verification catches what single-pass audits miss — including a fabricated 5★/500-review schema block."
         image: "/makeoverlyonline/images/projects/excalibur.jpg"
         featured:
@@ -205,6 +213,9 @@ params:
           - "Python"
 
       - title: "Tooth Corner: 2,000+ CDCP Keywords"
+        stat: "2,000+"
+        statLabel: "CDCP Keywords Mapped"
+        statSubtitle: "Tooth Corner · 152 Canadian Cities"
         content: "Dental DSO programmatic SEO: 2,000+ CDCP keywords mapped across 152 Canadian cities, 30+ Ontario locations. Full keyword-to-city matrix for location page generation."
         image: "/makeoverlyonline/images/projects/tooth-corner.jpg"
         featured:
@@ -216,6 +227,9 @@ params:
           - "Local SEO"
 
       - title: "Distillery Events: $233K–$382K Revenue Recovery"
+        stat: "$233K–$382K"
+        statLabel: "Revenue Recovery"
+        statSubtitle: "Distillery Events · 12-Month Projection"
         content: "A Toronto venue group eaten by a neighborhood entity. Entity disambiguation, fabricated review schema discovery, Knowledge Graph remediation. Projected 12-month recovery: $233K–$382K."
         image: "/makeoverlyonline/images/projects/distillery.jpg"
         featured:
@@ -228,6 +242,9 @@ params:
           - "Excalibur V3.1"
 
       - title: "Peak 15 Systems: 50 → 10,000 Monthly Visits"
+        stat: "50 → 10,000"
+        statLabel: "Monthly Visits Projection"
+        statSubtitle: "Peak 15 Systems · Tour Operator SaaS"
         content: "Tour operator SaaS with zero commercial landing pages. 8 near-page-1 keywords addressable in 60–90 days. 12-month projection: 10,000 visits/month, 250 demo requests."
         image: "/makeoverlyonline/images/projects/peak15.jpg"
         featured:
@@ -447,8 +464,13 @@ params:
 
 menu:
   main:
+    - identifier: case-studies
+      name: Case Studies
+      title: Case Studies
+      url: /case-studies
+      weight: 1
     - identifier: blog
       name: Blog
       title: Blog
-      url: /case-studies
-      weight: 1
+      url: /blog
+      weight: 2

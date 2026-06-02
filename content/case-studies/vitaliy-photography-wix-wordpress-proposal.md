@@ -1,13 +1,16 @@
 ---
 title: "Vitaliy Photography: A Wix-to-WordPress migration proposal for a Cleveland wedding photographer — and what it verified"
-date: 2026-05-28T13:00:00-05:00
+date: 2023-10-11T13:00:00-05:00
 draft: false
 tags: ["case study", "local SEO", "WordPress", "wedding photography", "proposal"]
 categories: ["case studies"]
 description: "Vitaliy Pysmennyy operated a 40-page Wix wedding photography site in Cleveland. The engagement audited it, benchmarked against Mike Staff Productions in Detroit, and delivered a four-month $4,000 migration and SEO proposal. The engagement also independently verified the $1,000/month TWAG billing rate."
 summary: "A full competitive audit, phased WordPress migration plan, and $4,000 proposal delivered for a Cleveland wedding photographer whose Wix site was insufficient for meaningful SEO results. The engagement independently documented the $1,000/month TWAG retainer rate — stated directly to the prospective client as a pricing reference on June 14, 2022."
+stat: "Wix → WP"
+statLabel: "Migration Proposal"
+statSubtitle: "Vitaliy Photography · Cleveland Wedding"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/vitaliy-photography-wix-wordpress-proposal.jpg"
   alt: ""
   caption: ""
 ShowToc: true

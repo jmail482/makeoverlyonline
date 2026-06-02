@@ -1,13 +1,16 @@
 ---
 title: "Cassie's: Local SEO for a 5-location adult entertainment business, with every standard playbook tool unavailable"
-date: 2026-05-28T14:00:00-05:00
+date: 2022-09-23T14:00:00-05:00
 draft: false
 tags: ["case study", "local SEO", "adult industry", "GBP", "citation building"]
 categories: ["case studies"]
 description: "Five Australian locations. Citation directories that decline adult content. GMB verification requiring exterior signage photos. Competitors stuffing search keywords into their GMB business names in violation of Google's guidelines — and Google not acting on reports."
 summary: "Daniel operated Cassie's across five Australian locations. The adult industry classification removed most standard local SEO tools from the available options. The engagement delivered a prioritized plan that worked within those constraints."
+stat: "5"
+statLabel: "Locations · No Playbook"
+statSubtitle: "Cassie's · Adult Entertainment SEO"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/cassies-adult-industry-local-seo-advisory.jpg"
   alt: ""
   caption: ""
 ShowToc: true

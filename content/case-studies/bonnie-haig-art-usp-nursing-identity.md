@@ -1,13 +1,16 @@
 ---
 title: "Bonnie Haig Art: Why a painter with 18 works and a subscriber goal needed a USP before she needed a funnel"
-date: 2026-05-28T13:30:00-05:00
+date: 2023-04-17T13:30:00-05:00
 draft: false
 tags: ["case study", "digital marketing strategy", "USP", "artist marketing", "email list"]
 categories: ["case studies"]
 description: "Bonnie Haig wanted to grow her email list. Her site, Instagram, and social presence communicated no commercial intent — only one 'special discounts' reference, no selling visible on Instagram, no Facebook business page. The engagement reframed the goal and recommended building her identity around her nursing background."
 summary: "Before advising on email list growth, the audit identified the underlying problem: no one visiting Bonnie's site could determine whether she sold anything. The central recommendation was a USP built around her nursing professional background."
+stat: "18"
+statLabel: "Works Need USP First"
+statSubtitle: "Bonnie Haig Art · Subscriber Goal"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/bonnie-haig-art-usp-nursing-identity.jpg"
   alt: ""
   caption: ""
 ShowToc: true

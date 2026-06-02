@@ -1,13 +1,16 @@
 ---
 title: "Panic Away: A self-funded AdWords campaign that returned profit, and a YouTube asset that kept paying after"
-date: 2026-05-28T12:00:00-05:00
+date: 2022-11-04T12:00:00-05:00
 draft: false
 tags: ["case study", "paid media", "Google Ads", "YouTube", "affiliate"]
 categories: ["case studies"]
 description: "A self-directed Google AdWords campaign promoting Panic Away (anti-anxiety digital product) produced a positive return on ad spend without agency support. A separately produced YouTube video for a meditation software affiliate generated ongoing passive income from viewer conversions."
 summary: "Two independent paid affiliate projects. The AdWords campaign reached profitability — affiliate commissions exceeded ad spend. The YouTube affiliate video generated passive commission income over time from a single content asset."
+stat: "Profit"
+statLabel: "AdWords · YouTube Asset"
+statSubtitle: "Panic Away · Self-Funded Affiliate"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/panic-away-adwords-profitable-paid-affiliate.jpg"
   alt: ""
   caption: ""
 ShowToc: true

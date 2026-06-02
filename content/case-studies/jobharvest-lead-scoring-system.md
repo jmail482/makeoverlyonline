@@ -1,13 +1,16 @@
 ---
 title: "JobHarvest: A scoring and filtering system for SEO job leads — built because most job boards waste your time"
-date: 2026-05-29T13:30:00-05:00
+date: 2024-11-26T13:30:00-05:00
 draft: false
 tags: ["case study", "automation", "job search", "lead scoring", "Python"]
 categories: ["case studies"]
 description: "JobHarvest is a job lead filtering and scoring system built to eliminate the 75%-match-or-reject threshold problem in SEO job searching. It filters for role fit, flags EU/non-remote locations, removes junior roles, and scores remaining leads against a documented skills profile — all without generating filler leads."
 summary: "Senior SEO job searching without a filter system produces noise: junior roles, EU-only listings, mismatched titles, and remote-listed roles that turn out to be location-specific. JobHarvest applies a 75% match threshold minimum, removes filler, and scores leads against a documented profile. Methodology documented in HOW_SCORING_WORKS.md (688 lines)."
+stat: "Score"
+statLabel: "SEO Job Leads"
+statSubtitle: "Built Because Job Boards Waste Time"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/jobharvest-lead-scoring-system.jpg"
   alt: ""
   caption: ""
 ShowToc: true

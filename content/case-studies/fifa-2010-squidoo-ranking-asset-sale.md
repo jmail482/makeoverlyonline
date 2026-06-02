@@ -1,13 +1,16 @@
 ---
 title: "FIFA 2010 on Squidoo: The ranking worked. The conversion hypothesis didn't. The page sold anyway."
-date: 2026-05-28T11:30:00-05:00
+date: 2022-06-11T11:30:00-05:00
 draft: false
 tags: ["case study", "trend intercept", "Squidoo", "affiliate", "asset sale"]
 categories: ["case studies"]
 description: "A pre-event Squidoo page targeting World Cup 2010 search traffic achieved strong organic ranking and significant traffic. TV affiliate conversions failed — tournament search intent doesn't convert to TV purchases. The ranked asset was sold to a buyer who recognized its residual value."
 summary: "The ranking strategy worked. The monetization hypothesis didn't. World Cup search traffic arrived but didn't convert to large-screen television affiliate purchases. Rather than discarding the asset, it was sold. Lesson: ranking success and conversion success are separate outcomes."
+stat: "Sold"
+statLabel: "Ranking Worked · Page Sold"
+statSubtitle: "FIFA 2010 · Squidoo Era"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/fifa-2010-squidoo-ranking-asset-sale.jpg"
   alt: ""
   caption: ""
 ShowToc: true

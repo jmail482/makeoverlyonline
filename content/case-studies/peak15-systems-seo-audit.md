@@ -1,13 +1,16 @@
 ---
 title: "Peak 15 Systems: A tour operator SaaS with 50 monthly organic visits and 10,000 in reach — separated by 7 pages that don't exist"
-date: 2026-05-29T10:30:00-05:00
+date: 2025-02-21T10:30:00-05:00
 draft: false
 tags: ["case study", "SaaS SEO", "tour operator", "keyword research", "content strategy"]
 categories: ["case studies"]
 description: "Peak 15 Systems builds booking and back-office software for multi-day tour operators. At audit date, the site generated ~50 monthly organic visits — virtually all from one blog post and brand search. No commercial landing pages existed. Core buyer keyword 'tour operator software' sat at position #14."
 summary: "A SpyFu API audit of peak15systems.com identified a structural content gap: one blog post was doing all the organic work, zero commercial landing pages existed for any buyer-intent keyword, and 8 near-page-1 keywords were addressable within 60–90 days. The 12-month traffic potential from proper execution: 10,000 visits/month and 250 demo requests."
+stat: "50 → 10,000"
+statLabel: "Monthly Visits Projection"
+statSubtitle: "Peak 15 Systems · Tour Operator SaaS"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/peak15-systems-seo-audit.jpg"
   alt: ""
   caption: ""
 ShowToc: true

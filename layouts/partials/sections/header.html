@@ -58,6 +58,18 @@
                 <span class="brand-word">makeover<span class="brand-accent">ly</span></span>
             </a>
 
+            <!-- social icons: between brand and nav menu (desktop only) -->
+            {{ if .Site.Params.hero.socialLinks }}
+            <div class="nav-social-icons d-none d-lg-flex">
+                {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+                <a href="{{ .url }}"{{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener"{{ end }} class="nav-social-ic" aria-label="{{ .label | default "social" }}">
+                    <i class="{{ .icon }}"></i>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}
                 <div>
                     <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default (i18n "search_placeholder") }}'

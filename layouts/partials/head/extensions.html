@@ -1,3 +1,6 @@
+<!-- FontAwesome loaded globally (theme only loaded it on the home page; subpages had empty social-icon circles) -->
+<script defer src="{{ "fontawesome-6/all-6.4.2.js" | relURL }}"></script>
+
 <style>
 /* ================================================================
    MASTER COLOR/OPACITY OVERRIDE — makeoverlyonline
@@ -221,6 +224,70 @@ body.home #recent-posts,
 body.home #recent-posts + *,
 body.home footer .recent-posts,
 #recent-posts{display:none !important;}
+
+/* Social icons in the nav — between brand logo and menu items */
+.nav-social-icons{display:flex;align-items:center;gap:8px;margin-left:18px;}
+.nav-social-icons .nav-social-ic{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;
+  background:transparent;border:1.5px solid #d4d4d4;
+  color:#111 !important;font-size:1rem;text-decoration:none;
+  transition:all .18s ease;flex:none;
+}
+.nav-social-icons .nav-social-ic i,
+.nav-social-icons .nav-social-ic svg{color:#111 !important;opacity:1 !important;width:15px;height:15px;font-size:15px;fill:#111;}
+.nav-social-icons .nav-social-ic:hover{background:#111 !important;border-color:#111 !important;}
+.nav-social-icons .nav-social-ic:hover i{color:#fff !important;}
+
+/* Resume download link in hero — small light-blue text under the bio paragraph */
+#hero .hero-resume-link{
+  display:inline-block;margin-top:1rem;
+  color:#2E86DE !important;text-decoration:none;
+  font-size:0.95rem;font-weight:500;letter-spacing:0.01em;
+  transition:color .18s ease;
+}
+#hero .hero-resume-link:hover{color:#1B4F8B !important;text-decoration:underline;}
+
+/* Project card image + stat overlay (thematic AI background + HTML stat text on top) */
+#projects .project-card-head{position:relative;overflow:hidden;}
+#projects .project-bg-img{display:block;width:100%;height:auto;filter:contrast(2.5) brightness(0.7) saturate(1.8);}
+#projects .project-byline{
+  position:absolute;top:1rem;left:1.1rem;
+  font-size:0.62rem;font-weight:700;letter-spacing:0.14em;
+  color:#222 !important;opacity:0.85;text-transform:uppercase;
+  z-index:2;pointer-events:none;
+}
+#projects .project-stat-overlay{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:1.2rem;z-index:2;pointer-events:none;
+}
+#projects .project-stat-number{
+  font-size:3.2rem;font-weight:800;line-height:1;letter-spacing:-0.02em;
+  color:#111 !important;
+}
+#projects .project-stat-label{
+  font-size:0.78rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
+  color:#111 !important;margin-top:0.55rem;
+}
+#projects .project-stat-subtitle{
+  font-size:0.7rem;font-weight:500;letter-spacing:0.02em;
+  color:#666 !important;margin-top:0.55rem;
+}
+@media (max-width: 991px){
+  #projects .project-stat-number{font-size:2.5rem;}
+}
+
+/* Align stats bar top line with the View Case Studies button top line */
+/* Align stats bar leftward so its left edge matches the photo's left edge */
+/* Combined into one rule with higher specificity to beat Variation A's margin shorthand */
+#hero .col-lg-8 .hero-stats{margin-top:60px !important;margin-left:-376px !important;}
+
+/* Align photo top with the Nishikawa headline top */
+#hero .image{padding-top:19px !important;}
+
+/* Shift entire hero block left by ~2 inches */
+#hero > .container{transform:translateX(-192px);}
 </style>
 
 <style>

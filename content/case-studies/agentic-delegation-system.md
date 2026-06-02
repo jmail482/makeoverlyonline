@@ -1,13 +1,16 @@
 ---
 title: "Building an 8-layer agentic delegation system: orchestration, routing, and cost discipline across a multi-LLM stack"
-date: 2026-05-29T11:30:00-05:00
+date: 2025-09-12T14:00:00-05:00
 draft: false
 tags: ["case study", "AI infrastructure", "agentic systems", "multi-LLM", "automation"]
 categories: ["case studies"]
 description: "A completed agentic orchestration framework defining 8 delegation layers, 7 workflow types, a free-first routing matrix, and an inbox/outbox handoff protocol for multi-agent AI task execution — built as a standalone operating system for AI-assisted marketing work."
 summary: "The Agentic Org Chart and Workflow System defines how AI tasks are structured, routed, and executed across a multi-provider stack (Witsy, Ollama, OpenRouter, Cerebras, Groq, Google, xAI). The framework separates strategy from execution, writer from critic, and establishes cost discipline rules that reserve premium model tokens for synthesis and QA — not bulk processing."
+stat: "8"
+statLabel: "Layer Agentic System"
+statSubtitle: "Orchestration · Routing · Cost Discipline"
 cover:
-  image: ""
+  image: "/makeoverlyonline/images/case-studies/agentic-delegation-system.jpg"
   alt: ""
   caption: ""
 ShowToc: true
