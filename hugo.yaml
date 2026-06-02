@@ -51,8 +51,8 @@ params:
     textAlign: left
 
   navbar:
-    align: ms-auto
-    brandName: "Jonathan Nishikawa"
+    align: me-auto
+    brandName: ""
     showBrandLogo: false
     disableSearch: true
     stickyNavBar:
@@ -110,12 +110,18 @@ params:
       url: "/makeoverlyonline/files/jonathan-nishikawa-resume.pdf"
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-linkedin
+        - icon: fab fa-linkedin-in
           url: "https://www.linkedin.com/in/jonathan-nishikawa"
+          label: "LinkedIn"
+          color: "#0A66C2"
         - icon: fab fa-github
           url: "https://github.com/jmail482"
+          label: "GitHub"
+          color: "#181717"
         - icon: fas fa-envelope
           url: "mailto:jmail482@gmail.com"
+          label: "Email"
+          color: "#D14836"
 
   # ============================================================
   # SECTION 2: ABOUT — The Human Element

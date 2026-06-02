@@ -52,15 +52,10 @@
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
-            <!-- navbar brand -->
-            <a class="navbar-brand primary-font text-wrap" href="{{ .Site.Home.RelPermalink }}">
-                {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) (.Site.Params.navbar.showBrandLogo | default true) }}
-                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
-                    class="d-inline-block align-top">
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
-                {{ else }}
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
-                {{ end }}
+            <!-- navbar brand: makeoverly logo -->
+            <a class="navbar-brand brand-logo primary-font" href="{{ .Site.Home.RelPermalink }}" aria-label="makeoverly">
+                <img class="brand-mark" src="{{ .Site.Home.RelPermalink }}images/makeoverly-mark.svg" alt="makeoverly logo">
+                <span class="brand-word">makeover<span class="brand-accent">ly</span></span>
             </a>
 
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}

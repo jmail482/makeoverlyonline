@@ -11,10 +11,11 @@
                             alt="{{ .Site.Params.title }} profile image"
                         >
                         {{ if .Site.Params.hero.socialLinks }}
-                        <div class="hero-photo-social">
+                        <div class="hero-social-stack">
                             {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
-                            <a href="{{ .url }}"{{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener"{{ end }} class="btn social-icon">
-                                <i class="{{ .icon }}"></i>
+                            <a href="{{ .url }}"{{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener"{{ end }} class="social-row" style="--brand: {{ .color | default "#111111" }}">
+                                <span class="social-ic"><i class="{{ .icon }}"></i></span>
+                                <span class="social-label">{{ .label | default "" }}</span>
                             </a>
                             {{ end }}
                         </div>
