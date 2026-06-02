@@ -83,7 +83,7 @@ params:
   hero:
     enable: true
     intro: ""
-    title: "Nishikawa."
+    title: "Nishikawa"
     subtitle: "I make businesses visible where it counts."
     content: "Independent SEO consultant with 14 years in digital marketing. I build AI-driven marketing engines and execute technical SEO strategies that produce measurable, documented results — not promises."
     image: "/makeoverlyonline/images/profile.jpg"
