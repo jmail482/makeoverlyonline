@@ -13,7 +13,10 @@
                     <a href="{{ .RelPermalink }}" class="text-reset text-decoration-none">
                     <div class="card-head project-card-head">
                         {{ if .Params.cover.image }}
-                        <img class="card-img-top project-bg-img" src="{{ .Params.cover.image | relURL }}" alt="{{ .Title }}">
+                        {{ $cover := .Params.cover.image }}
+                        {{ $hover := replace $cover "/case-studies/" "/case-studies/hover/" }}
+                        <img class="card-img-top project-bg-img project-bg-default" src="{{ $cover | relURL }}" alt="{{ .Title }}">
+                        <img class="card-img-top project-bg-img project-bg-hover" src="{{ $hover | relURL }}" alt="" aria-hidden="true">
                         {{ end }}
                         {{ if .Params.stat }}
                         <div class="project-stat-overlay">

@@ -251,6 +251,20 @@ body.home footer .recent-posts,
 /* Project card image + stat overlay (thematic AI background + HTML stat text on top) */
 #projects .project-card-head{position:relative;overflow:hidden;}
 #projects .project-bg-img{display:block;width:100%;height:auto;}
+/* Hover crossfade: blueprint default, vivid on hover, 600ms ease */
+#projects .project-card-head .project-bg-hover{
+  position:absolute !important;top:0 !important;left:0 !important;
+  width:100% !important;height:100% !important;
+  object-fit:cover !important;
+  opacity:0 !important;transition:opacity 600ms ease-in-out !important;
+  pointer-events:none !important;z-index:1 !important;
+}
+#projects .project-card-head .project-bg-default{
+  transition:opacity 600ms ease-in-out !important;
+  position:relative !important;z-index:0 !important;
+}
+#projects .card:hover .project-card-head .project-bg-hover{opacity:1 !important;}
+#projects .card:hover .project-card-head .project-bg-default{opacity:0 !important;}
 #projects .project-byline{
   position:absolute;top:1rem;left:1.1rem;
   font-size:0.62rem;font-weight:700;letter-spacing:0.14em;
