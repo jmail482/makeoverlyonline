@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Infrastructure on Jonathan Nishikawa — SEO Consultant</title><link>https://jmail482.github.io/makeoverlyonline/tags/infrastructure/</link><description>Recent content in Infrastructure on Jonathan Nishikawa — SEO Consultant</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 14 Mar 2026 21:15:00 -0500</lastBuildDate><atom:link href="https://jmail482.github.io/makeoverlyonline/tags/infrastructure/index.xml" rel="self" type="application/rss+xml"/><item><title>The Ignition Key Paradox: Eliminating LLM 'Skimming' via Tokenized Runtime Governance</title><link>https://jmail482.github.io/makeoverlyonline/case-studies/ignition-key-llm-governance/</link><pubDate>Sat, 14 Mar 2026 21:15:00 -0500</pubDate><guid>https://jmail482.github.io/makeoverlyonline/case-studies/ignition-key-llm-governance/</guid><description>This engagement involved auditing a high-complexity Memory Gateway where documentation-only governance was failing. By re-engineering the boot sequence into a tokenized &amp;lsquo;Ignition Key&amp;rsquo; and building a transaction-safe Memcore runtime, I eliminated the 50K-token &amp;lsquo;boot-squeeze&amp;rsquo; and implemented forensic-grade write provenance.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Infrastructure on Jonathan Nishikawa — SEO Consultant</title>
+		<link>http://localhost:1313/makeoverlyonline/tags/infrastructure/</link>
+		<description>Recent content in Infrastructure on Jonathan Nishikawa — SEO Consultant</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 14 Mar 2026 21:15:00 -0500</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/makeoverlyonline/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Ignition Key Paradox: Eliminating LLM &#39;Skimming&#39; via Tokenized Runtime Governance</title>
+				<link>http://localhost:1313/makeoverlyonline/case-studies/ignition-key-llm-governance/</link>
+				<pubDate>Sat, 14 Mar 2026 21:15:00 -0500</pubDate>
+				<guid>http://localhost:1313/makeoverlyonline/case-studies/ignition-key-llm-governance/</guid>
+				<description>This engagement involved auditing a high-complexity Memory Gateway where documentation-only governance was failing. By re-engineering the boot sequence into a tokenized &amp;lsquo;Ignition Key&amp;rsquo; and building a transaction-safe Memcore runtime, I eliminated the 50K-token &amp;lsquo;boot-squeeze&amp;rsquo; and implemented forensic-grade write provenance.</description>
+			</item>
+	</channel>
+</rss>

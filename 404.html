@@ -1,1 +1,29 @@
-<!doctype html><html><head><meta charset=utf-8><title>Redirecting...</title><script>(function(){var s,e="/makeoverlyonline/",t={about:"about/",experience:"experience/",projects:"featured-work/","featured-work":"featured-work/","deep-case-study":"deep-case-study/",contact:"contact/"},o=window.location.pathname,n=(window.location.hash||"").replace("#","");if(n&&t[n]){window.location.replace(e+t[n]);return}if(o.indexOf(e)===0&&(s=o.substring(e.length).replace(/\/$/,""),t[s])){window.location.replace(e+t[s]);return}window.location.replace(e)})()</script></head><body><p>Redirecting...</p></body></html>
+<!DOCTYPE html>
+<html>
+<head><script src="/makeoverlyonline/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=makeoverlyonline/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        (function() {
+            var base = '/makeoverlyonline/';
+            var map = {
+                'about': 'about/',
+                'experience': 'experience/',
+                'projects': 'featured-work/',
+                'featured-work': 'featured-work/',
+                'deep-case-study': 'deep-case-study/',
+                'contact': 'contact/'
+            };
+            var path = window.location.pathname;
+            var hash = (window.location.hash || '').replace('#', '');
+            if (hash && map[hash]) { window.location.replace(base + map[hash]); return; }
+            if (path.indexOf(base) === 0) {
+                var seg = path.substring(base.length).replace(/\/$/, '');
+                if (map[seg]) { window.location.replace(base + map[seg]); return; }
+            }
+            window.location.replace(base);
+        })();
+    </script>
+</head>
+<body><p>Redirecting...</p></body>
+</html>
