@@ -19,7 +19,7 @@
                         <div class="project-stat-overlay">
                             <div class="project-stat-number">{{ .Params.stat }}</div>
                             {{ if .Params.statLabel }}<div class="project-stat-label">{{ .Params.statLabel }}</div>{{ end }}
-                            {{ if .Params.statSubtitle }}<div class="project-stat-subtitle">{{ .Params.statSubtitle }}</div>{{ end }}
+                            {{ if .Params.statSubtitle }}<div class="project-stat-subtitle">{{ .Params.statSubtitle | safeHTML }}</div>{{ end }}
                         </div>
                         {{ end }}
                     </div>
