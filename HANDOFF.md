@@ -1,95 +1,38 @@
-# makeoverlyonline — Editing Handoff (for any LLM/dev)
+# makeoverlyonline — POINTER FILE
 
-Complete instructions to safely edit and ship the live site.
-**Live URL:** https://jmail482.github.io/makeoverlyonline/
+> ⚠️ **THIS FILE IS A STUB. DO NOT TRUST ITS CONTENTS FOR CURRENT SITE STATE.**
+> Previous versions of this file kept full project state inline and went stale within hours.
+> The earlier 2026-06-01 version described Nishikawa-with-period, 4 stats, enabled hero buttons, and Linux build paths — none of which are current.
+>
+> **Read `hugo.yaml` for current config. Read the active session's `HANDOFF_PACKAGE.md` for active state.**
 
 ---
 
-## 1. Repo & access
-- **GitHub:** `github.com/jmail482/makeoverlyonline` (account `jmail482`, NOT `jnish1964-a11y`).
-- Auth: a Personal Access Token with `repo` scope. The token does **NOT** have `workflow` scope, so the deploy is **manual** (see §4). Token is embedded in the local clone's git remote.
-- Branches:
-  - `main` — **source of truth** (Hugo source: layouts, content, config). Edit here.
-  - `gh-pages` — **published output** (pre-built static HTML). GitHub Pages serves THIS branch. Never hand-edit; it's overwritten on every deploy.
+## Where canonical truth actually lives
 
-## 2. Stack
-- **Hugo** (static site generator), theme **`github.com/gurusabarish/hugo-profile`** pulled as a Hugo Module (`go.mod` / `module.imports` in `hugo.yaml`).
-- Bootstrap 5 + FontAwesome 6 (vendored in repo: `bootstrap-5/`, `fontawesome-6/`).
-- No JS framework. Single-page hero + standalone section pages.
-
-## 3. File map — WHERE TO EDIT WHAT
-| Want to change… | Edit this |
+| What you need | Where to look |
 |---|---|
-| Hero text, name, stats, image, buttons, social links | `hugo.yaml` → `params.hero` |
-| Nav menu items / order | `layouts/partials/sections/header.html` (hardcoded `<li>` links) + `params.navbar` |
-| Logo / brand lockup | `layouts/partials/sections/header.html` (`.navbar-brand` block) + `static/images/makeoverly-mark.svg` |
-| All custom styling / colors / overrides | `layouts/partials/head/extensions.html` (two `<style>` blocks) |
-| Hero layout/HTML (social row, button column) | `layouts/partials/sections/hero/index.html` |
-| About / Experience / Contact / Featured Work / Deep Case Study copy | `content/*.md` + matching `params` sections in `hugo.yaml` |
-| Section component HTML | `layouts/partials/sections/about.html`, `deep-case-study.html`, `testimonials.html` |
-| Case study / blog pages | `content/case-studies/` style pages via `layouts/sectionpage/single.html` |
+| Current site config (params, content, deploy URL) | `hugo.yaml` |
+| Active session state (deploys, open loops, recent edits) | `~/.runner/workspaces/*/sessions/*/HANDOFF_PACKAGE.md` (sort by mtime, take newest) |
+| Custom CSS / layout overrides | `layouts/partials/head/extensions.html`, `layouts/partials/sections/*.html` |
+| Case study content (23 files) | `content/case-studies/*.md` |
+| Deploy procedure | Skills DB id 1145 (`hugo-profile-deploy-makeoverlyonline`) or the session's `skill_deploy_makeoverlyonline.md` |
+| Theme params reference | `~/.runner/memory/reference_hugo_profile_theme.md` |
+| Known gotchas (CRLF kills nested params, AI-image blanks, alignment magic numbers) | `~/.runner/memory/feedback_*.md` (search keyword `hugo` or `image`) |
+| Live URL (always check first) | https://jmail482.github.io/makeoverlyonline/ |
+| Source branch / deploy branch | `main` = source, `gh-pages` = published HTML |
 
-### Theme override mechanism (IMPORTANT)
-Files under `layouts/` in THIS repo **override** the same-path files in the theme module. E.g. `layouts/partials/sections/header.html` shadows the theme's `partials/sections/header.html`. To customize a theme partial, copy it from the module into the matching local `layouts/` path and edit the copy. Current overrides: `header.html`, `hero/index.html`, `head/extensions.html`, `about.html`, `deep-case-study.html`, `testimonials.html`, `index.html`, `404.html`, `sectionpage/single.html`.
+## Rule for any future LLM picking up work here
 
-## 4. Build & deploy (manual — do exactly this)
-From repo root on `main`:
+1. **DO NOT** treat this file as current state.
+2. Read `hugo.yaml` to see what's actually configured.
+3. Find the most recent `HANDOFF_PACKAGE.md` under `~/.runner/workspaces/*/sessions/*/`.
+4. Browse the live URL before making assumptions.
+5. **DO NOT** add project state to this file. Anything you put here is stale within the day.
+6. If the recruiter spec or design decisions need a long-form home, put them in `~/.runner/memory/project_makeoverlyonline_portfolio.md` (file memory survives sessions; this file does not).
 
-```bash
-# 1. Build (NEVER pass -b/--baseURL; baseURL is already in hugo.yaml)
-hugo --gc --minify          # outputs to ./public/
+## How to verify this file is still a pointer and not a content file
 
-# 2. Commit source changes to main
-git add -A && git commit -m "..." && git push origin main
+If anything in this file describes specific stats, button labels, hero text, file paths beyond canonical anchors, or commit SHAs — it's drifted. Restore it to a pointer.
 
-# 3. Deploy built output to gh-pages via a worktree
-git worktree add /tmp/ghp gh-pages
-cd /tmp/ghp
-find . -maxdepth 1 -not -name '.git' -not -name '.' -exec rm -rf {} +
-cp -r /path/to/repo/public/* .
-touch .nojekyll                      # REQUIRED — stops Jekyll from eating _-prefixed assets
-git add -A && git commit -m "Deploy: ..." && git push origin gh-pages
-cd - && git worktree remove /tmp/ghp --force
-```
-GitHub Pages rebuilds in ~60–90s. Static assets (e.g. the SVG mark) often go live before the HTML finishes re-propagating — re-check after a minute.
-
-> Why manual: the token lacks `workflow` scope, so a GitHub Actions auto-deploy can't be pushed. The worktree method publishes pre-built HTML directly to `gh-pages`, which Pages serves as-is.
-
-## 5. Local preview (subpath-correct)
-The site lives under the `/makeoverlyonline/` subpath, so serving `public/` at root breaks asset/links. Mirror the subpath:
-```bash
-mkdir -p serveroot && ln -sfn /path/to/repo/public serveroot/makeoverlyonline
-cd serveroot && python3 -m http.server 8911
-# open http://127.0.0.1:8911/makeoverlyonline/
-```
-
-## 6. Key config highlights (`hugo.yaml`)
-- `baseURL: https://jmail482.github.io/makeoverlyonline/`
-- `params.color.*` all set to pure black/white (B/W editorial direction).
-- `params.animate: false` (scroll/jump animations disabled).
-- `params.navbar.align: me-auto` → nav sits LEFT, beside the logo. `brandName: ""` + `showBrandLogo: false` because the brand is rendered manually in `header.html`.
-- `params.hero`: title `Nishikawa.`, subtitle, content, `image: /makeoverlyonline/images/profile.jpg`, 4 `stats`, `button` (View Case Studies → `/makeoverlyonline/case-studies`), `resumeButton` (→ `/makeoverlyonline/files/jonathan-nishikawa-resume.pdf` — **PDF not uploaded yet**), and `socialLinks.fontAwesomeIcons` (LinkedIn / GitHub / Email, each with `icon`, `url`, `label`, `color`).
-
-## 7. Custom CSS architecture (`layouts/partials/head/extensions.html`)
-Two `<style>` blocks. Design intent = strict black-on-white, Inter font, no theme accent colors.
-- **Global override:** `*{ color:#000 !important }` forces black text everywhere (kills theme's gray/opacity). ⚠️ **Gotcha:** this also blacks out icon glyphs. Any white/colored glyph must beat it with higher specificity, e.g. `#hero .hero-social-row .social-ic i{ color:#fff !important }`.
-- **Hero left column** (most recently customized):
-  - `.hero-social-row` — social icons in a **horizontal row** under the photo: small (34px), **monochrome**, transparent circle with `1.5px #d4d4d4` border, dark glyph, fills black on hover. (No brand colors, no labels/pills.)
-  - `.hero-buttons-left` — the two CTA buttons stacked in a **column** below the social row; both forced to the **same** solid-black style (identical look), `width:100%`, `max-width:240px`.
-- **Brand lockup:** `.brand-mark` (SVG, ~30px), `.brand-word` (Inter, bold), `.brand-accent` (the "ly", emerald `#19B36B`).
-
-## 8. Branding assets
-- `static/images/makeoverly-mark.svg` — the logo icon: black rounded tile + white upward growth-arrow + emerald `#19B36B` accent arrowhead. SVG = scales crisp at any size. The "makeoverly" wordmark next to it is **HTML text** (in `header.html`), not baked into the SVG, so it uses the page's Inter font.
-- `static/images/profile.jpg` — hero portrait (B/W treatment applied via CSS).
-
-## 9. Content
-`content/about.md`, `contact.md`, `deep-case-study.md`, `experience.md`, `featured-work.md`. Deep Case Study holds real TWAG client data. Most structured data (experience roles, testimonials, project cards) lives in `hugo.yaml` `params`, not the markdown.
-
-## 10. Lessons / preferences (owner = Jonathan)
-- **Aesthetic:** minimal, professional, monochrome black/white. **No** colored pills, badges, labels, or decorative accents unless explicitly asked. Keep it clean.
-- **Always browser-verify the LIVE github.io URL** after deploying before claiming it's done. Don't trust the build alone; don't blame browser cache.
-- Keep `main` (source) and `gh-pages` (built) in sync — if you push source but forget the gh-pages deploy, the live site won't change.
-- Don't add `-b`/`--baseURL` to the hugo build; it double-prefixes the subpath and breaks links.
-
----
-_Last updated after: smaller monochrome social icons + identical CTA buttons (commit on `main`)._
+Last stubbed: 2026-06-02
