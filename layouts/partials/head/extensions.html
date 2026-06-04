@@ -249,7 +249,7 @@ body.home footer .recent-posts,
 #hero .hero-resume-link:hover{color:#1B4F8B !important;text-decoration:underline;}
 
 /* Project card image + stat overlay (thematic AI background + HTML stat text on top) */
-#projects .project-card-head{position:relative;overflow:hidden;}
+#projects .project-card-head{position:relative;overflow:hidden;container-type:inline-size;}
 #projects .project-bg-img{display:block;width:100%;height:auto;}
 /* Hover crossfade: blueprint default, vivid on hover, 600ms ease */
 #projects .project-card-head .project-bg-hover{
@@ -279,6 +279,7 @@ body.home footer .recent-posts,
 #projects .project-stat-number{
   font-size:3.2rem;font-weight:800;line-height:1;letter-spacing:-0.02em;
   color:#111 !important;
+  white-space:nowrap;
   text-shadow:0 1px 6px rgba(255,255,255,0.95),0 0 14px rgba(255,255,255,0.75);
 }
 #projects .project-stat-label{
@@ -290,9 +291,6 @@ body.home footer .recent-posts,
   font-size:0.7rem;font-weight:500;letter-spacing:0.02em;
   color:#000 !important;margin-top:0.55rem;
   text-shadow:0 1px 4px rgba(255,255,255,0.9),0 0 8px rgba(255,255,255,0.6);
-}
-@media (max-width: 991px){
-  #projects .project-stat-number{font-size:2.5rem;}
 }
 
 /* Align stats bar top line with the View Case Studies button top line */
@@ -415,4 +413,37 @@ section h3.text-center, .title h2{
 #hero .hero-buttons-left a.btn:hover,
 #hero .hero-buttons-left a.btn-outline:hover{background:#000000 !important;border-color:#000000 !important;color:#ffffff !important;}
 </style>
+
+<script>
+// Auto-fit project stat numbers to fit container width — short stats stay big,
+// long stats scale down until they fit on a single line.
+(function(){
+  function fit() {
+    var nums = document.querySelectorAll('#projects .project-stat-number');
+    nums.forEach(function(el){
+      el.style.fontSize = '';  // reset to default (3.2rem)
+      var card = el.closest('.project-card-head');
+      if (!card) return;
+      var maxWidth = card.clientWidth * 0.86;  // 86% of card width (leaves padding margin)
+      var size = 3.2; // rem
+      // Shrink iteratively until it fits, floor at 1.5rem
+      var safety = 30;
+      while (el.scrollWidth > maxWidth && size > 1.5 && safety-- > 0) {
+        size -= 0.1;
+        el.style.fontSize = size + 'rem';
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fit);
+  } else {
+    fit();
+  }
+  window.addEventListener('resize', fit);
+  // Re-fit after web fonts load (otherwise widths are wrong before fonts swap in)
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(fit);
+  }
+})();
+</script>
 
