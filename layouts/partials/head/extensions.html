@@ -293,16 +293,30 @@ body.home footer .recent-posts,
   text-shadow:0 1px 4px rgba(255,255,255,0.9),0 0 8px rgba(255,255,255,0.6);
 }
 
-/* Align stats bar top line with the View Case Studies button top line */
-/* Align stats bar leftward so its left edge matches the photo's left edge */
-/* Combined into one rule with higher specificity to beat Variation A's margin shorthand */
-#hero .col-lg-8 .hero-stats{margin-top:60px !important;margin-left:-376px !important;}
+/* Desktop-only: align stats bar + shift hero left (needs lg+ viewport) */
+@media (min-width: 992px){
+  /* Align stats bar top line with the View Case Studies button top line */
+  /* Align stats bar leftward so its left edge matches the photo's left edge */
+  #hero .col-lg-8 .hero-stats{margin-top:60px !important;margin-left:-376px !important;}
 
-/* Align photo top with the Nishikawa headline top */
-#hero .image{padding-top:19px !important;}
+  /* Align photo top with the Nishikawa headline top */
+  #hero .image{padding-top:19px !important;}
 
-/* Shift entire hero block left by ~2 inches */
-#hero > .container{transform:translateX(-192px);}
+  /* Shift entire hero block left by ~2 inches */
+  #hero > .container{transform:translateX(-192px);}
+}
+
+/* Mobile hero: proper spacing, no overflow */
+@media (max-width: 991px){
+  #hero > .container{transform:none !important;padding-left:1.25rem !important;padding-right:1.25rem !important;}
+  #hero .col-lg-8 .hero-stats{margin-left:0 !important;margin-top:1.5rem !important;justify-content:center;}
+  #hero .hero-stat{flex:1 1 auto;min-width:0;}
+  #hero .hero-stat .stat-number{font-size:1.4rem !important;}
+  #hero .hero-stat .stat-label{font-size:0.6rem !important;}
+  #hero .hero-stats{gap:0.8rem !important;flex-wrap:wrap !important;}
+  #hero .image{padding-top:0 !important;}
+  #hero h1{margin-top:0.5rem !important;}
+}
 </style>
 
 <style>
