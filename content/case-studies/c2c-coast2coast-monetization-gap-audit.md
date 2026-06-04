@@ -6,9 +6,9 @@ tags: ["case study", "STAR format", "B2B marketing", "safety training", "monetiz
 categories: ["case studies"]
 description: "A 10-year, 35-location, 150,000-student Canadian Red Cross training partner with 19,190 Google reviews at 4.8★ is producing under $5M in revenue. The Excalibur audit identified why: best-in-class trust signals, marketing infrastructure that doesn't scale with them. STAR-format breakdown of the monetization gap and 90-day fix path."
 summary: "C2C had every trust signal a Canadian safety training market wants — Red Cross + Heart & Stroke + AHA certifications, 19,190 Google reviews at 4.8★, enterprise clients including CP Rail and Tim Hortons. Revenue: under $5M. The Excalibur audit isolated the gap to four specific infrastructure failures, each fixable in under 90 days."
-stat: "$5M"
-statLabel: "Ceiling · 150K Alumni"
-statSubtitle: "Coast2Coast First Aid · 19,190 Reviews"
+stat: "38 → 91"
+statLabel: "Thought Leadership → Trust"
+statSubtitle: "Coast2Coast · Excalibur Audit"
 cover:
   image: "/makeoverlyonline/images/case-studies/c2c-coast2coast-monetization-gap-audit.jpg"
   alt: ""
