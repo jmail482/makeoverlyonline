@@ -4,6 +4,14 @@ media:
   extensions: [jpg, jpeg, png, webp, svg, gif]
 
 content:
+  # Home page + About / Contact / Featured Work / Deep Case Study / Experience
+  # all render from hugo.yaml (theme config). Edit the text values here.
+  - name: homepage
+    label: Home & Site Content
+    type: file
+    path: hugo.yaml
+    format: code
+
   - name: case-studies
     label: Case Studies
     type: collection
@@ -76,6 +84,9 @@ content:
       - name: description
         label: Meta description
         type: text
+      - name: summary
+        label: Summary
+        type: text
       - name: tags
         label: Tags
         type: string
@@ -100,6 +111,18 @@ content:
     label: Terms of Service
     type: file
     path: content/terms-of-service.md
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: permissions
+    label: Permissions
+    type: file
+    path: content/permissions.md
     fields:
       - name: title
         label: Title
