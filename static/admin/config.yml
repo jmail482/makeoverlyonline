@@ -1,0 +1,77 @@
+backend:
+  name: github
+  repo: jmail482/makeoverlyonline
+  branch: main
+  auth_methods: [token, oauth]
+
+site_url: https://jmail482.github.io/makeoverlyonline/
+show_preview_links: true
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: case-studies
+    label: Case Studies
+    label_singular: Case Study
+    folder: content/case-studies
+    create: true
+    slug: '{{slug}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", required: false }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false }
+      - { name: description, label: Meta description, widget: text, required: false }
+      - { name: summary, label: Summary, widget: text, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: categories, label: Categories, widget: list, required: false }
+      - { name: stat, label: Stat, widget: string, required: false }
+      - { name: statLabel, label: Stat label, widget: string, required: false }
+      - { name: statSubtitle, label: Stat subtitle, widget: string, required: false }
+      - name: cover
+        label: Cover
+        widget: object
+        required: false
+        fields:
+          - { name: image, label: Image, widget: image, required: false }
+          - { name: alt, label: Alt text, widget: string, required: false }
+          - { name: caption, label: Caption, widget: string, required: false }
+      - { name: ShowToc, label: Show table of contents, widget: boolean, default: true, required: false }
+      - { name: TocOpen, label: TOC open by default, widget: boolean, default: false, required: false }
+      - { name: body, label: Body, widget: markdown }
+  - name: blog
+    label: Blog
+    label_singular: Blog Post
+    folder: content/blog
+    create: true
+    slug: '{{slug}}'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", required: false }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false }
+      - { name: description, label: Meta description, widget: text, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: body, label: Body, widget: markdown }
+  - name: pages
+    label: Pages
+    files:
+      - name: privacy
+        label: Privacy Policy
+        file: content/privacy-policy.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: body, label: Body, widget: markdown }
+      - name: terms
+        label: Terms of Service
+        file: content/terms-of-service.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: body, label: Body, widget: markdown }
+      - name: permissions
+        label: Permissions
+        file: content/permissions.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: body, label: Body, widget: markdown }
